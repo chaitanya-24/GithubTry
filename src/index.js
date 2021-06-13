@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// let App = function () {
+//   let item = React.createElement("img", {
+//     src: "https://i.pinimg.com/originals/a8/e5/a0/a8e5a0e32a340b875c5264e8211ec41d.jpg",
+//     height : "300px",
+//     width : "300px",
+//   });
+//   return item;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// return (
+//   <img
+//     src = "https://i.pinimg.com/originals/a8/e5/a0/a8e5a0e32a340b875c5264e8211ec41d.jpg"
+//     height = "300px"
+//     width ="300px"
+//   />
+// );
+// };
+
+let root = document.getElementById("root");
+
+ReactDOM.render(<App />, root);
